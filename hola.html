@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Botones Deslizantes</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- Contenedor de botones -->
+    <div class="button-container swiper-container">
+      <div class="swiper-wrapper">
+        <!-- Primera fila de botones -->
+        <div class="swiper-slide">
+          <a href="https://www.example.com" class="btn btn-primary">Botón 1</a>
+          <a href="https://www.example2.com" class="btn btn-secondary">Botón 2</a>
+          <a href="https://www.example3.com" class="btn btn-success">Botón 3</a>
+          <!-- Agrega más botones aquí -->
+        </div>
+
+        <!-- Segunda fila de botones -->
+        <div class="swiper-slide">
+          <a href="https://www.example4.com" class="btn btn-danger">Botón 4</a>
+          <a href="https://www.example5.com" class="btn btn-warning">Botón 5</a>
+          <a href="https://www.example6.com" class="btn btn-info">Botón 6</a>
+          <!-- Agrega más botones aquí -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="swiper.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper-container', {
+      slidesPerView: 'auto', // Mostrar la cantidad de botones que quepan en la pantalla
+      spaceBetween: 10, // Espacio entre botones
+      centeredSlides: true, // Centrar los botones
+      loop: true, // Hacer que los botones se deslicen infinitamente
+      grabCursor: true, // Cambiar el cursor al pasar por encima del carrusel
+    });
+  </script>
+</body>
+
+</html>
